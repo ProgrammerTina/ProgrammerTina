@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Oswald:wght@200..700&display=swap');
+
+.hero-image {
+    position: relative;
+    display: block; /* Ensures the container fits the image and content */
+    max-height: 500px; /* Optional: Controls the height of the hero section */
+    overflow: hidden; /* Ensures nothing spills outside, especially if you use max-height */
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover; /* Ensures the image covers the area well */
+    display: block; /* Removes bottom margin/whitespace */
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em; /* Adjust as needed */
+    text-shadow: 2px 2px 4px #000000; /* Example shadow for better readability */
+    /* Add more styling here as needed */
+}
+
+.full-width-underline {
+    border-bottom: 2px solid #DC1CC2; /* Adjust thickness and color as needed */
+    padding-bottom: 10px; /* Optional: Adjusts spacing between text and underline */
+}
+
+.about-me-text ul, .about-me-text li, .about-me-text p {
+    color: black;
+}
+
+.home-photo{
+	float:left;
+	max-width: 50%;
+	height:auto;
+	margin: 50px 0 10px 20px;
+}
+
+body{
+	font-family: 'Oswald', sans-serif;
+	color:#DC1CC2;
+	margin: 0;
+}
+h1, h2{
+	font-family: 'Aref Ruqaa Ink', sans-serif;
+	color:#7E3593;
+}
+h1{
+	text-align: center;
+	font-size: 4em;
+}
+main{
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+/* Vertical Navigation bar */
+
+a:link{
+color: purple;
+}
+a:visited{
+color: purple;
+}
+a:hover{
+color: blue;
+}
+a:active{
+color: black;
+}
+nav{
+	background-color: lightpink;
+	border-top: 2px pink solid;
+	border-bottom: 2px pink solid;
+	padding: 5px;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline;
+}
+nav a{
+    text-decoration: none;
+    padding-right: 10px;
+}
+nav a:link{
+	color: purple;
+}
+nav a:visited{
+	color: purple;
+}
+nav a:hover{
+	color: red;
+}
+nav a:active{
+	color: black;
+}
+footer{
+	text-align: center;
+	border-top: 1px pink solid;
+	padding: 10px;
+}
+
+/* CSS Adjustments for Tablets */
+
+@media only screen and (max-width: 1024px){
+	h1{
+		font-size: 2em;
+	}
+}
+
+/* CSS Adjustments for Smartphones */
+
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 1.5em;
+	}
+}
+
